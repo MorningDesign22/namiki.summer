@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja" dir="Itr">
+<head>
+    <title>並木街珈琲｜ファミリーレストラン　ジョイフル［JoyFull］</title>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="ジョイフル,JoyFull,並木町珈琲,namikimachicoffee,パンケーキ,フレンチトースト,コーヒー,
+    ネルドリップ,スムージー,アペタイザー,モーニング,Freewifi,,">
+    <meta name="discription" content="ようこそ並木街珈琲へ。慌ただしい日常から離れ,ゆっくり過ごせる空間を作りたい,お客さまが
+    「ちょっとした幸せ」を感じることのできるお店であること。それが私たちの願いです。">
+    <meta property="og:title" content="並木街珈琲｜ジョイフル">
+    <meta property="og:discription" content="ジョイフルグループの「並木街珈琲」公式サイト。">
+    <!--phpのファイル<meta property="og:url" content="https://www.joyfull.co.jp/shop/namikinomachi/pages/fairs/fairmenu.php">-->
+    <!--<meta property="og:image" content="">-->
+    <meta property="og:site_name" content="並木街珈琲｜ジョイフル">
+    <meta property="og:type" content="website">
+    <!--グーグルアナリスと-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="reset.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/vendor/modernizr.custom.min.js"></script>
+    <script src="js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/main.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+        </style>
+
+    <!-- jQuery読み込み ハンバーガーメニュー・ページ遷移-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+    <script src="./js/script.js"></script>
+    <script>
+    $(function(){
+      $('#nav_toggle').on('click',function(){
+          if ($('#top_head').hasClass('open')) {
+            $('#top_head').removeClass('open');
+          }else{
+            $('#top_head').addClass('open');
+          }
+      });
+
+      var pagetop = $('#page_top');
+      pagetop.hide();
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {  
+        //100pxスクロールしたら表示
+            pagetop.fadeIn();
+        } else {
+            pagetop.fadeOut();
+        }
+      });
+      pagetop.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500); //0.5秒かけてトップへ移動
+        return false;
+      });
+
+    });
+</script>
+    <!--　↑ jQuery読み込み ハンバーガーメニュー・ページ遷移-->
+
+</head>
+<body>
+    <header>
+        <!---header-並木の街珈琲-->
+        <h1>
+            <img class="logo_img" src="img/header_logo.jpg" alt="並木街珈琲">
+        </h1>
+        <div id="top_head">
+            <!--#top_head　お手本サイトからのコピペ-->
+              <ul class="nav pc scroll">
+                  <li><a href="https://www.joyfull.co.jp/shop/namikinomachi/index.php">TOP</a></li>
+                  <!-- <li><a href="https://www.joyfull.co.jp/shop/namikinomachi/pages/fairs/fairmenu.php">FAIR MENU</a></li> -->
+                  <li><a href="https://www.joyfull.co.jp/shop/namikinomachi/pages/grandmenu/index.php">GRAND MENU</a></li>
+                  <li><a href="https://www.joyfull.co.jp/shop/namikinomachi/pages/stampcard.php">STAMP CARD</a></li>					
+                  <li><a href="https://www.joyfull.co.jp/shop/namikinomachi/pages/access.php">ACCESS</a></li>
+              </ul>
+             <!--ハンバーガーメニュー始め-->
+              
+              <div id="top_head">
+                <div class="inner">
+                  <div id="mobile_head">
+                    <div id="nav_toggle">
+                      <div>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+                      </div>         
+                    </div>
+                  </div>
+                  <div id="global_nav">
+                    <ul class="sp_menu scroll"?>
+                      <li><a href="https://www.joyfull.co.jp/shop/namikinomachi/index.php">TOP</a></li>
+                      <!-- <li><a href="https://www.joyfull.co.jp/shop/namikinomachi/pages/fairs/fairmenu.php">FAIR MENU</a></li> -->
+                      <li><a href="https://www.joyfull.co.jp/shop/namikinomachi/pages/grandmenu/index.php">GRAND MENU</a></li>
+                      <li><a href="https://www.joyfull.co.jp/shop/namikinomachi/pages/stampcard.php">STAMP CARD</a></li>          
+                      <li><a href="https://www.joyfull.co.jp/shop/namikinomachi/pages/access.php">ACCESS</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+             <!--お手本サイトからのコピペ　終わり-->
+             
+     </div>
+        
+    </header>
+    <main>
+    <div class="top-img">
+        <p><img class="pc" src="img/top-img.jpg" alt="PC版 Summer Menu"></p>
+        <p><img class="sp" src="img/sp-top.jpg" alt="スマホ版 Summer Menu"></p>
+    </div>
+    <div class="menu-container">
+        <!--fair menu-->
+        <section class="menu-list">
+            <!--01-->
+            <div class="menu-item">
+                <div class="image-box">
+                    <img src="img/chikin.jpg" alt="">
+                </div>
+                <div class="text-box">
+                    <p class="item-title">ケイジャンチキンのスパイシージャンバラヤ</p>
+                    <p class="item-price"><span class="p-sub">￥</span>1,280
+                        (<span class="p-sub">税込¥</span>1,408)</p>
+                    <p class="item-subtitle">アメリカ南部のソウルフード ジャンバラヤを<br class="sp-br">並木街珈琲風にアレンジしました。
+                        <br class="sp-br">スパイシーで身も心も元気になるご馳走です。</p>
+                </div>
+            </div>
+             <!--02-->
+            <div class="menu-item">
+                <div class="image-box">
+                    <img src="img/tomato.jpg" alt="">
+                </div>
+                <div class="text-box">
+                    <p class="item-title">あいこの恵のトマトパスタ</p>
+                    <p class="item-price"><span class="p-sub">￥</span>1,180 (<span class="p-sub">税込¥</span>1,298)</p>
+                    <p class="item-subtitle">甘いあいこトマトをふんだんに使用しました。<br class="sp-br">ベーコンとほろ苦い菜の花のアクセントが夏らしい
+                        <br class="sp-br">さっぱりパスタです。</p>
+                </div>
+            </div>
+            <!--03-->
+            <div class="menu-item">
+                <div class="image-box">
+                    <img src="img/lemon.jpg" alt="">
+                </div>
+                <div class="text-box">
+                    <p class="item-title">レモンヨーグルト＆たっぷりフルーツのパンケーキ</p>
+                    <p class="item-price"><span class="p-sub">￥</span>1,380 (<span class="p-sub">税込¥</span>1,518)</p>
+                    <p class="item-subtitle">レモンヨーグルトソースでさっぱりと。<br class="sp-br">ほんのり甘いカスタードクリームとフルーツの相性が抜群です。   
+                        <br class="sp-br">ビネガージュレをお好みでどうぞ。</p>
+                </div>
+            </div>
+            <div class="comment-box">
+                    <img class="comment" src="img/drinkset.png">
+
+            </div>
+        </section>
+        <section class="menu-list">
+                <div class="menu-item">
+                    <div class="image-box">
+                        <img src="img/frappe.jpg">
+                    </div>
+                    <div class="text-box">
+                        <p class="item-title">（右）ストロベリー＆ヨーグルトフラッペ</p>
+                        <p class="item-price"><span class="p-sub">￥</span>700 (<span class="p-sub">税込¥</span>770)</p>
+                        <p class="item-subtitle">ほんのり甘いストロベリーとヨーグルトの酸味が夏にピッタリ</p>
+
+                        <p class="item-title">（左）ピーチ＆マンゴーフラッペ</p>
+                        <p class="item-price"><span class="p-sub">￥</span>700 (<span class="p-sub">税込¥</span>770)</p>
+                        <p class="item-subtitle">マンゴーをたっぷり使用しました。<br class="sp-br">ピーチの優しい甘さも口いっぱいに広がります。</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="image-box">
+                    <img src="img/soda.jpg" alt="">
+                </div>
+                   
+            
+            
+                <div class="text-box">
+                    <p class="item-title">（右）ナタデココ＆ストロベリーソーダ</p>
+                    <p class="item-price"><span class="p-sub">￥</span>550 (<span class="p-sub">税込¥</span>605)</p>
+                    <p class="item-subtitle">ほんのり甘いストロベリーにナタデココの食感が癖になる<br class="sp-br">どこか懐かしい味わいに仕上げました。</p>
+
+                    <p class="item-title">（左）ピーチ＆マンゴーフラッペ</p>
+                    <p class="item-price"><span class="p-sub">￥</span>550 (<span class="p-sub">税込¥</span>605)</p>
+                    <p class="item-subtitle">レモンソーダにたっぷりナタデココをトッピング。<br class="sp-br">後味すっきり。</p>
+                </div>
+            </div>
+            
+            
+            <div class="drink-set">
+                <p><span class="big">Drink Set|</span>お食事(パンケーキを含む)をご注文の方は、ドリンク100円 (税込110円) 引きでご注文いただけます。</p>
+            </div>
+        </section>
+
+        
+    </div>
+    <p id="page_top">
+        <a href="#"><img src="img/page-top.png" alt=""></a>
+    </p>
+    <div class="bg-white"></div>    
+</main> 
+<footer>
+    <span>
+        <img src="img/footer_logo.jpg" alt="">
+    <span>
+    <p class="copyright">Copyright © Joyfull Co.,Ltd.All rights reserved.</p>
+</footer>
+</body>
+
+</html>
