@@ -122,6 +122,7 @@ main span{
 }
 main .menu-container .item-title {
     margin-top: 7%!important;
+    font-weight: bold;
 }
 .item-title ,.item-price{
     width: 100%;
