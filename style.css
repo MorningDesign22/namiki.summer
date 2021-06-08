@@ -158,7 +158,7 @@ main .menu-container .item-title {
     top: 0;
 }
 .comment-box {
-    width: 40vw;
+    width: 35vw;
 }
 .comment {
     width: 85%;
@@ -168,10 +168,14 @@ main .menu-container .item-title {
     background-color: #fff;
     width: 95%;
     margin: 0 auto 2.0rem;
+    padding: 0;
 }
 .drink-set .big {
     font-size: 1.125em;
     letter-spacing: 0.10em;
+}
+.drink-set > p {
+    margin: 0;
 }
 
 #page_top{
@@ -470,21 +474,16 @@ main .desert .drink-item .text-box {
     .sp-br {
         display: none;
     }
-    .desert-item {
-        margin-bottom: 0;
-      display: block;
-    }
-    main .desert {
-        width: 90%;
-        margin: auto;
-    }
     .item-title ,.item-price{
         font-size:13px!important;
     }
     .item-subtitle{
         font-size: 10px;
     }
-
+    .comment {
+        margin-left: 0;
+    }
+    
     .bg-white{
     height:75px;
     }
